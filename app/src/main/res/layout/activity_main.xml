@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/lives_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/heart" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/car"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp" />
+
+    <ImageButton
+        android:id="@+id/btn_left"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="32dp"
+        android:background="@drawable/left_arrow"
+        android:contentDescription="Left" />
+
+    <ImageButton
+        android:id="@+id/btn_right"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp"
+        android:background="@drawable/right_arrow"
+        android:contentDescription="Right" />
+
+</FrameLayout>
